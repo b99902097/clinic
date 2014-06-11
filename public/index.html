@@ -1,34 +1,196 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Painter</title>
+<html lang="en">
 
-        <!-- jQuery -->
-        <script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        <!-- Bootstrap CSS & JavaScript -->
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-        <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <title>孫欲珍診所</title>
 
-        <!-- Firebase -->
-        <script src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'></script>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
 
-        <!-- justfont -->
-        <script type="text/javascript">var _jf = _jf || [];_jf.push(['p','28325']);_jf.push(['_setFont','wt014','css','.wt014']);_jf.push(['_setFont','wt014','css','h1']);_jf.push(['_setFont','wt014','alias','wt014']);(function(f,q,c,h,e,i,r,d){var k=f._jf;if(k.constructor===Object){return}var l,t=q.getElementsByTagName("html")[0],a=function(u){for(var v in k){if(k[v][0]==u){if(false===k[v][1].call(k)){break}}}},j=/\S+/g,o=/[\t\r\n\f]/g,b=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,g="".trim,s=g&&!g.call("\uFEFF\xA0")?function(u){return u==null?"":g.call(u)}:function(u){return u==null?"":(u+"").replace(b,"")},m=function(y){var w,z,v,u,x=typeof y==="string"&&y;if(x){w=(y||"").match(j)||[];z=t[c]?(" "+t[c]+" ").replace(o," "):" ";if(z){u=0;while((v=w[u++])){if(z.indexOf(" "+v+" ")<0){z+=v+" "}}t[c]=s(z)}}},p=function(y){var w,z,v,u,x=arguments.length===0||typeof y==="string"&&y;if(x){w=(y||"").match(j)||[];z=t[c]?(" "+t[c]+" ").replace(o," "):"";if(z){u=0;while((v=w[u++])){while(z.indexOf(" "+v+" ")>=0){z=z.replace(" "+v+" "," ")}}t[c]=y?s(z):""}}},n;k.push(["_eventActived",function(){p(h);m(e)}]);k.push(["_eventInactived",function(){p(h);m(i)}]);k.addScript=n=function(u,A,w,C,E,B){E=E||function(){};B=B||function(){};var x=q.createElement("script"),z=q.getElementsByTagName("script")[0],v,y=false,D=function(){x.src="";x.onerror=x.onload=x.onreadystatechange=null;x.parentNode.removeChild(x);x=null;a("_eventInactived");B()};if(C){v=setTimeout(function(){D()},C)}x.type=A||"text/javascript";x.async=w;x.onload=x.onreadystatechange=function(G,F){if(!y&&(!x.readyState||/loaded|complete/.test(x.readyState))){y=true;if(C){clearTimeout(v)}x.src="";x.onerror=x.onload=x.onreadystatechange=null;x.parentNode.removeChild(x);x=null;if(!F){setTimeout(function(){E()},200)}}};x.onerror=function(H,G,F){if(C){clearTimeout(v)}D();return true};x.src=u;z.parentNode.insertBefore(x,z)};a("_eventPreload");m(h);n(r,"text/javascript",false,3000)})(this,this.document,"className","jf-loading","jf-active","jf-inactive","//ds.justfont.com/js/stable/v/4.2/id/122403449544");</script>
+    <!-- Add custom CSS here -->
+    <link href="css/business-casual.css" rel="stylesheet">
+</head>
 
-        <link rel="stylesheet" href="stylesheets/index.css">
-    </head>
+<body>
 
-    <body>
-        <div class="form-group">
-            <label style="margin-left: 10px">畫布名稱
-                <input id="newName" type="text" class="form-control" style="width: 400px; display: inline-block" placeholder="name your new canvas">
-            </label>
-            <button id="createNew" class="btn btn-primary">開始畫畫</button>
+    <div class="brand" data-background="black">孫欲珍小兒科家庭醫學科診所</div>
+    <div class="address-bar">主治醫生:孫欲珍</div>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Business Casual</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+					<li><a href="part0_result.html">Result</a></li>
+                    <li><a href="part1_parser.html">Crawler</a></li>
+                    <li><a href="part2_mapAPI.html">Google Map API</a></li>
+                    <li><a href="part3_bootstrap.html">Bootstrap</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <script type="text/javascript" src="/javascripts/index.js"></script>
-    </body>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+		<div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Description lists</h2>
+                    <hr>
+                    <hr class="visible-xs">
+					<center><p>介紹Google Map API使用方法，並應用其以將旅遊資訊視覺化。
+					<p>HomePage Addr. : http://www.csie.ntu.edu.tw/~r02944005/webProject/index</center>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Content Outline</h2>
+                    <hr>
+                    <hr class="visible-xs">
+						<p>● 台北小旅行網站介紹 
+						<p>● Part 1 - Crawler
+						<ol>
+							<li>Real time Google Search
+							<li>使用RE抽出結果item中的link
+							<li>透過proxy.php取得各link下的內容
+							<li>使用RE抽出link 內容中的經緯度與地址
+							<li>Conclusion 使用方法
+						</ol>
+						<p>● Part 2 - Google Map API
+						<ol>
+							<li>Google Map API 簡介
+							<li>Google Maps JavaScript API
+							<li>如何取得 API Key
+							<li>常用 function / 功能
+							<li>Reference
+						</ol>
+						<p>● part 3 - Bootstrap
+						<ol>
+							<li>Bootstrap是什麼?
+							<li>如何開始使用Bootstrap
+							<li>Bootstrap好用工具
+							<li>其他相關資源及連結
+						</ol>
+                </div>
+            </div>
+        </div>
+		
+		<div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Our <strong>Team</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <center><img class="img-responsive" src="img/mem001.jpg" alt=""></center>
+                    <h3>R02922008 古佳怡 </br>
+						<small>資工所碩一</small></br>
+                        <small>程式設計、資料蒐集。</small>
+                    </h3>
+                </div>
+				<div class="col-sm-4 text-center">
+                    <center><img class="img-responsive" src="img/mem002.jpg" alt=""></center>
+                    <h3>R02921073 鍾家涵 </br>
+						<small>電機所碩一</small></br>
+                        <small>程式設計、環境設置。</small>
+                    </h3>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <center><img class="img-responsive" src="img/mem003.jpg" alt=""></center>
+                    <h3>R02944005 郭秀萍 </br>
+						<small>網媒所碩一</small></br>
+                        <small>程式設計、排版美工。</small>
+                    </h3>
+                </div>
+         
+                <div class="clearfix"></div>
+            </div>
+        </div>
+		<!-- Silde Show-->
+		<!--<div class="row">
+            <div class="box">
+                <div class="col-lg-12 text-center">
+                    <div id="carousel-example-generic" class="carousel slide">
+                        
+                        <ol class="carousel-indicators hidden-xs">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+
+                        
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img class="img-responsive img-full" src="img/slide-1.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/slide-2.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/slide-3.jpg" alt="">
+                            </div>
+                        </div>
+
+                        
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="icon-next"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+		<!-- Silde Show-->
+    </div>
+    <!-- /.container -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright &copy; Team #6 2014</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+    // Activates the Carousel
+    $('.carousel').carousel({
+        interval: 5000
+    })
+    </script>
+
+</body>
+
 </html>
