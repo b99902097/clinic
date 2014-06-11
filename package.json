@@ -1,5 +1,5 @@
 {
-  "name": "simple-painter",
+  "name": "Sun-clinic",
   "version": "0.8.2",
   "description": "CCSP HW3 Node.js template",
   "main": "index.js",
@@ -15,5 +15,5 @@
     "morgan": "^1.1.1",
     "ejs": "^1.0.0"
   },
-  "repository": "https://bitbucket.org/b99902097/webfinal"
+  "repository": "git@heroku.com:sun-clinic.git"
 }
