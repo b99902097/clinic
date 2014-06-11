@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+div.eraseHelper {
+    display: none;
+}
+
+div.eraseHelper.active {
+    border: 1px solid black;
+    padding: 1px;
+    position: absolute;
+    display: inline-block;
+    cursor: none;
+}
+
+div.color div {
+    display: inline-block;
+    border: 2px solid #CCC;
+    margin: 2px;
+    width: 32px;
+    height: 32px; 
+}
+
+div.color div.selected {
+    border: 2px solid black;
+}
+
+#drawing {
+	display: inline-block;
+}

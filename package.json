@@ -1,0 +1,19 @@
+{
+  "name": "simple-painter",
+  "version": "0.8.2",
+  "description": "CCSP HW3 Node.js template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^3.8.1",
+    "body-parser": "^1.2.2",
+    "path": "^0.4.9",
+    "morgan": "^1.1.1",
+    "ejs": "^1.0.0"
+  },
+  "repository": "https://bitbucket.org/b99902097/webfinal"
+}
